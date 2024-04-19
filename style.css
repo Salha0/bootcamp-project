@@ -1,1 +1,116 @@
 
+* {
+    font-family: Consolas;
+}
+
+.container_Wrapper {
+    display: flex;
+    flex-direction: column;
+    /* by default flex-direction btekhda row */
+    justify-content: center;
+    /* justify-control to control how the display is 
+    center:   the display at the end 
+    flex-start: the display from start
+    space-between: leave space between them leaving corners
+    space-around:  leave space between them also from corners 
+           (space inside not equal to that from the corner)
+     space-evenly: leave space equally between them also from corners */
+    align-items: center;
+    background: rgba(2, 0, 36);
+    background: linear-gradient(90deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgba(5, 4, 73, 1) 8%,
+            rgba(9, 9, 121, 1) 14%,
+            rgba(107, 79, 210, 1) 30%,
+            rgba(163, 70, 182, 1) 61%,
+            rgba(175, 5, 174, 1) 75%,
+            rgba(83, 160, 176, 1) 100%);
+    height: 100vh;
+    /* vh take all the height of the view part (kl screen) */
+    width: 100%;
+    /* margin: 0 !important;
+    /* !important to strictly make something */
+    /* padding: 0 !important; */
+}
+
+.container1 {
+    background-color: rgb(38, 14, 45);
+    height: 400px;
+    width: 400px;
+    /* margin: 10px; */
+    /* margin-bottom: 300px; */
+    /* margin: 100px 200px 400px 700px; */
+    padding: 10px;
+    /* padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px; */
+    text-align: center;
+    border: none;
+    /* border: 3px solid rgb(53, 53, 105); */
+    border-radius: 360px;
+    /* top right bottom left */
+    /* top and bottom: 360px / right and left: 10px */
+    box-shadow: 0 10px 20px rgb(181, 41, 64);
+    /*          x   y  density     color   */
+    color: antiquewhite;
+}
+
+.first_heading {
+    background-color: transparent;
+    color: rgb(221, 176, 176);
+    margin-top: 40px;
+    margin-left: -50px;
+    margin-bottom: 200px;
+    width: 250px;
+    height: fit-content;
+    padding: 5px;
+    border: 1px solid saddlebrown;
+    box-shadow: 2px 4px 8px #936565;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    /* position: relative;
+    z-index: 1; */
+}
+
+.first_heading:hover {
+    background-color: rgb(221, 176, 176);
+    color: rgb(38, 14, 45);
+    cursor: pointer;
+    transform: scale(1.5) rotate(30deg);
+}
+
+/* .second_heading {
+    position: relative;
+    z-index: 2;
+    background-color: #936565;
+    margin-top: -50px;
+} */
+
+.container2_Wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #876d9a;
+    width: inherit;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(110, 75, 75);
+    height: 150px;
+    width: 300px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.btn{
+    background-color: #876d9a;
+    color: aliceblue;
+    width: 200px;
+    height: 30px;
+}
